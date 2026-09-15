@@ -1,44 +1,64 @@
-<form> 
-     <ul>
- <li><a href="../index.html">Beranda</a></li>
- <li><a href="../Books/list.html">Daftar Buku</a></li>
- <li><a href="../Members/list.html">Daftar Anggota</a></li>
- <li><a href="../Members/tambah.html">Tambah Anggota</a></li>
- </ul>
-    <p> 
-        <label for="title">Title</label><br> 
-        <input type="text" id="title" name="title" required>
-    </p>
-
-    <p> 
-        <label for="author">Author</label><br> 
-        <input type="text" id="author" name="author" required> 
-    </p>
-
-    <p> 
-        <label for="year">Year</label><br> 
-        <input type="number" id="year" name="year" min="1900" max="2026" required> 
-    </p>
-
-    <p> 
-        <label for="isbn">ISBN</label><br> <input type="text" id="isbn" name="isbn"> 
-    </p>
-
-    <p> 
-        <label for="stock">Stock</label><br> 
-        <input type="number" id="stock" name="stock" min="0" required> 
-    </p>
-
-    <p> 
-        <label for="category">Category</label><br>
-        <select id="category" name="category"> 
-            <option value="fiction">Fiction</option> 
-            <option value="non-fiction">Non-Fiction</option> 
-            <option value="reference"> Reference</option> 
-        </select> 
-    </p>
-
-    <p> 
-        <button type="submit">Save</button> 
-    </p>
-</form>
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SIMPUS-Mini | Tambah Buku</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+  <header>
+    <h1>SIMPUS-Mini</h1>
+    <nav>
+       <ul>
+        <li><a href="../index.html">Beranda</a></li>
+        <li><a href="../Books/list.html">Daftar Buku</a></li>
+        <li><a href="../Books/tambah.html">Tambah Buku</a></li>
+        <li><a href="../Members/list.html">Daftar Anggota</a></li>
+        <li><a href="../Members/tambah.html">Tambah Anggota</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section>
+      <h2>Tambah Buku</h2>
+      <form>
+        <p>
+          <label for="title">Title</label><br>
+          <input type="text" id="title" name="title" required>
+        </p>
+        <p>
+          <label for="author">Author</label><br>
+          <input type="text" id="author" name="author" required>
+        </p>
+        <p>
+          <label for="year">Year</label><br>
+          <input type="number" id="year" name="year" min="1900" max="2026" required>
+        </p>
+        <p>
+          <label for="isbn">ISBN</label><br>
+          <input type="text" id="isbn" name="isbn">
+        </p>
+        <p>
+          <label for="stock">Stock</label><br>
+          <input type="number" id="stock" name="stock" min="0" required>
+        </p>
+        <p>
+          <label for="category">Category</label><br>
+          <select id="category" name="category">
+            <option value="fiction">Fiction</option>
+            <option value="non-fiction">Non-Fiction</option>
+            <option value="reference">Reference</option>
+          </select>
+        </p>
+        <p>
+          <button type="submit">Save</button>
+        </p>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <p>© 2026 SIMPUS-Mini — Jobsheet 1</p>
+  </footer>
+</body>
+</html>
