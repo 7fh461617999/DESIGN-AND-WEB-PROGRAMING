@@ -199,8 +199,16 @@ footer {
   overflow-x: auto;
 }
 
-
-
+pre {
+  background-color: #f7f9fb;
+  border: 1px solid #e2e6ea;
+  border-radius: 4px;
+  padding: 1rem;
+  font-family: Consolas, Monaco, "Courier New", monospace;
+  font-size: 0.85rem;
+  line-height: 1.5;
+  overflow-x: auto; 
+}
 @media (max-width: 900px) {
   .stat-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -218,6 +226,9 @@ footer {
   .nav-toggle-label {
     display: block;
   }
+  
+
+  
 
 
   header nav {
@@ -244,8 +255,8 @@ footer {
   form select {
     max-width: 100%;
   }
-}
 
+}
 @media (min-width: 1400px) {
   main {
     max-width: 1200px;
