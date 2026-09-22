@@ -227,10 +227,10 @@ pre {
     display: block;
   }
   
-
+  header nav.nav-open {
+  display: block;
+  }
   
-
-
   header nav {
     display: none;
     width: 100%;

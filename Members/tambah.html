@@ -9,7 +9,8 @@
 <body>
   <header>
     <h1>SIMPUS-Mini</h1>
-     <input type="checkbox" id="nav-toggle" class="nav-toggle">
+     <button type="button" id="nav-toggle-btn" class="nav-toggle-label" aria-label="Menu">&#9776;</button>
+
      <nav>
        <ul>
         <li><a href="../index.html">Beranda</a></li>
@@ -19,13 +20,11 @@
         <li><a href="../Members/tambah.html">Tambah Anggota</a></li>
       </ul>
     </nav>
-  <label for="nav-toggle" class="nav-toggle-label">&#9776;</label>
-    
   </header>
   <main>
     <section>
       <h2>Tambah Anggota</h2>
-      <form>
+      <form id="form-tambah">
         <p>
           <label for="name">Name</label><br>
           <input type="text" id="name" name="name" required>
