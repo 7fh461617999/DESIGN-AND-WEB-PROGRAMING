@@ -20,21 +20,15 @@ function initNavToggle() {
    2. KONFIRMASI HAPUS
    ============================================================ */
 function initHapusConfirm() {
-  document.addEventListener("click", function (e) {
-    // [Poin 26 - Praktik Tambahan: Inspeksi Event Delegation]
-    console.log("[Event Delegation] Klik terdeteksi pada elemen:", e.target);
+  document.addEventListener("submit", function (e) {
+    const form = e.target;
+    if (!form.classList.contains("form-hapus")) return;
 
-    const btn = e.target.closest(".btn-delete");
-    if (!btn) return;
-
-    console.log("[Event Delegation] Berhasil cocok dengan tombol .btn-delete:", btn);
-    const row = btn.closest("tr");
+    const row = form.closest("tr");
     const name = row ? row.querySelector("td")?.textContent : "data ini";
-    const yakin = confirm('Yakin ingin menghapus "' + name + '"?');
-    if (yakin && row) {
-      row.remove();
-      const input = document.getElementById("search-input");
-      if (input) input.dispatchEvent(new Event("keyup"));
+    const sure = confirm('Yakin ingin menghapus "' + name + '"?');
+    if (!sure) {
+      e.preventDefault();
     }
   });
 }
